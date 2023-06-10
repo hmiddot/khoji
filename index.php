@@ -1,7 +1,7 @@
 <?php 
 $update = json_decode(file_get_contents('php://input'), true);
 $message = $update['message'];
-
+$message_id = $message['message_id'];
 $chat_id = $message['chat']['id'];
 $message_text = $message['text'];
 
